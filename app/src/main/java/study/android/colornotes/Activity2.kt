@@ -27,7 +27,7 @@ class Activity2 : AppCompatActivity() {
         // записываем данные "ключ"-"значение"
         prefs.putString("note2", text.editableText.toString())
         // подтверждаем сделанные изменения (сохраняем)
-        prefs.commit()
+        prefs.apply()
     }
 
     override fun onResume() {
